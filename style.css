@@ -7,8 +7,8 @@ Basic Styling
     box-sizing: border-box;
 }
 body{
-    /* min-height: 100vh;
-    background-color: #0c192c; */
+    min-height: 100vh;
+    
     font-family: 'Poppins', sans-serif;
 }
 
@@ -394,8 +394,7 @@ card style start
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 25%;
-    margin-top: 25vh;
+    margin: 25vh auto;
     background: #2e3c51;
     padding: 20px;
     z-index: 1;
@@ -451,15 +450,47 @@ keyframes style section
         transform: scale(.7);
     }
     100%{
+        opacity: 2;
         margin-right: 5px;
         transform: scale(0.8);
-        opacity: 2;
     }
 }
 /* --------------------------------------
 Responsive style section with media query
 -----------------------------------------*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
+    .card{
+        width: 75vh;
+        margin: 25vh  auto;
+        
+    }
+    .card_title{
+        font-size: 2rem;
+    }
+    .card_text{
+        font-size: 1.5rem;
+    }
+    .horizental_line{
+        width: 60vh;
+    }
    
+    
+}
+@media only screen and (max-width: 600px){
+    .card{
+        width: 40vh;
+        margin: 25vh  auto;
+    }
+    .card_title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .card_text{
+        font-size: 1.2rem;
+    }
+    .horizental_line{
+        width: 40vh;
+        padding:0 3px;
+    }
     
 }
